@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    tools:context=".MainActivity" >
+
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/tvUserName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="62dp"
+            android:ems="10"
+            android:enabled="true"
+            android:hint="User Name"
+            android:inputType="text"
+            android:selectAllOnFocus="false" />
+
+        <EditText
+            android:id="@+id/tvPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvUserName"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Save Credentials" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBox1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:text="Continue" />
+
+</RelativeLayout>
